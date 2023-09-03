@@ -1,0 +1,91 @@
+[
+    {
+    "id": 1,
+    "nombre": "televisión",
+    "precio": 150000,
+    "marca": "Samsung",
+    "pulgadas": "44`",
+    "imagen": "/imagenes/tele.jpg"
+},
+{
+    "id": 2,
+    "nombre": "televisión",
+    "precio": 200000,
+    "marca": "LG",
+    "pulgadas": "50`",
+    "imagen": "/imagenes/tele2.jpeg"
+},
+{
+    "id": 3,
+    "nombre": "televisión",
+    "precio": 180000,
+    "marca": "Samsung",
+    "pulgadas": "48`",
+    "imagen": "/imagenes/tele3.jpg"
+},
+{
+    "id": 4,
+    "nombre": "cocina",
+    "precio": 140000,
+    "marca": "Patrick",
+    "imagen": "/imagenes/cocina.jpg"
+},
+{
+    "id": 5,
+    "nombre": "cocina",
+    "precio": 150000,
+    "marca": "Escorial",
+    "imagen": "/imagenes/cocina.jpg"
+},
+{
+    "id": 6,
+    "nombre": "cafetera",
+    "precio": 90000,
+    "marca": "Philco",
+    "imagen": "/imagenes/cafetera-peabody.jpg"
+},
+{
+    "id": 7,
+    "nombre": "licuadora",
+    "precio": 60000,
+    "marca": "Yelmo",
+    "imagen": "/imagenes/licuadora.jpeg"
+},
+{
+    "id": 8,
+    "nombre": "heladera",
+    "precio": 240000,
+    "marca": "Samsung",
+    "imagen": "/imagenes/heladera.jpeg",
+    "no-frost": false
+},
+{
+    "id": 9,
+    "nombre": "heladera",
+    "precio": 150000,
+    "marca": "Patrick",
+    "imagen": "/imagenes/heladera.jpeg",
+    "no-frost": true
+},
+{
+    "id": 10,
+    "nombre": "cafetera",
+    "precio": 93000,
+    "marca": "Cuk",
+    "imagen": "/imagenes/cuk.jpg"
+},
+{
+    "id": 11,
+    "nombre": "equipo de música",
+    "precio": 140000,
+    "marca": "Sony",
+    "imagen": "/imagenes/equipo.jpg"
+},
+{
+    "id": 12,
+    "nombre": "equipo de música",
+    "precio": 190000,
+    "imagen": "/imagenes/equipo.jpg",
+    "marca": "JVL"
+}
+]
