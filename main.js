@@ -66,6 +66,23 @@ const pedirProductos = async () => {
 
 };
 
+const buscarProductos = async () => {
+    try{
+        const response = await fetch("dataserver.json")
+        const data = await response.json();
+        const productos = data.results;
+
+        const buscador = productos.filter (item => {
+            
+        });
+    }
+     catch (error) {
+        console.log(error)
+    }
+
+};
+
+
 pedirProductos();
 
 

@@ -19,15 +19,17 @@ header {
     background: white;
  } 
  .menu-izquierdo{
-    display: flex;
-    justify-content: space-between;
     margin: 5px 20px;
  }
 
  .menu-derecho{
     display: flex;
+    text-align: center;
  }
-
+.menu-central{
+    display: flex;
+    align-items: center;
+}
 .carrito{
     margin-right: 5px;
 } 
@@ -64,10 +66,7 @@ h1{
     gap: 8px;
 }
 
-.carrito, .usuario, .contacto{
-    height: 30px;
-    width: 30px;
-}
+
 
 li{
     margin: 20px 5px;
@@ -85,4 +84,20 @@ li > h3 {
 
 button{
     cursor: pointer;
+}
+footer{
+    text-align: center;
+    display: grid;
+    background:  rgb(23, 24, 12);
+    color: white;
+    padding-bottom: 30px;
+}
+.contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.contacto > div{
+    margin: 10px;
 }
