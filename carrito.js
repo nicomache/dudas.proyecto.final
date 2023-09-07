@@ -2,15 +2,21 @@ let carrito = JSON.parse(localStorage.getItem("carrito") || [])
 
 
 carrito.forEach(item => {
-    let div = document.createElement("div");
+    const div = document.createElement("div");
 
     div.innerHTML +=   `
     <h2>${item.nombre}</h2>
+    <img class="ajuste-imagen" src="${item.imagen}" alt="${item.nombre}"</img>
     <p>$${item.precio}</p>
     <p>${item.marca}</p>
-    <img class="ajuste-imagen" src="${item.imagen}"</img>
+    <button id="${item.id}-delete">Eliminar de la lista</button>
    `
    document.body.append(div)
+   
+   document.getElementById(`${item.id}-delete`).addEventListener
+   ("click", ()=> {eliminarDelCarrito()
+   });
+
 });
 
 const comprar = () => {
@@ -20,6 +26,29 @@ const comprar = () => {
         alert(compradefinitiva)
 }
 
-document.getElementById("compra").addEventListener ("click", ()=>{ 
-    comprar()
+document.getElementById("compra").addEventListener 
+("click", ()=>{ comprar()
 });
+
+
+
+function eliminarDelCarrito(item) {
+    
+    let productoBorrar = `${item}`;
+    let productoABorrar = carrito.indexOf(productoBorrar);    
+    carrito.splice(productoABorrar, 1);
+
+    localStorage.setItem("carrito", JSON.stringify(carrito))
+}
+
+
+/*
+COMPRA EXITOSA
+Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Your work has been saved',
+  showConfirmButton: false,
+  timer: 1500
+})
+*/

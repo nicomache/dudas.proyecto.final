@@ -5,41 +5,84 @@
     list-style: none;
 }
 
-body{
-    background-color: yellow;
-}
 header {
     display: flex;
     justify-content: end;
     align-items: center;
-    height: 25vh;
-    padding: 10px;
+    height: 20vh;
+    background:  rgb(23, 24, 12)
   }
+ #container-menu{
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+ } 
+ .menu-izquierdo{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 20px;
+ }
+
+ .menu-derecho{
+    display: flex;
+ }
+
+.carrito{
+    margin-right: 5px;
+} 
+.carrito, .usuario{
+    padding: 2px 35px;
+}
 
 h1{
     height: 60px;
     color: rgb(70, 70, 70);
     font-family: cursive;
-    padding: 8px;
+    padding: 10px 10px;
+}
+.logo{
+    padding: 0px 10px;
+}
+.ajuste-imagen {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    transition: transform 0.5s ease
+}
+.ajuste-imagen:hover {
+    object-fit: contain;
+    transform: scale(1.2);
 }
 
 .listaProductos {
+    background: yellow;
     color:rgb(35, 11, 172);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 8px;
 }
 
-.ajuste-imagen {
-    width: 200px;
-    height: 250px;
-    border: 0.5px groove  rgba(39, 33, 112, 0.1);
-}
-
-
-.carrito, .usuario{
+.carrito, .usuario, .contacto{
     height: 30px;
     width: 30px;
 }
 
+li{
+    margin: 20px 5px;
+    border: 0.5px groove  rgba(39, 33, 112, 0.1);
+    text-align: center;
+    
+}
+li > h2 {
+    margin: 10px 50px;
+}
+
+li > h3 {
+    margin: 5px 0px;
+}
+
+button{
+    cursor: pointer;
+}

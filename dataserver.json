@@ -1,91 +1,91 @@
 [
     {
     "id": 1,
-    "nombre": "televisión",
+    "nombre": "Televisor",
     "precio": 150000,
     "marca": "Samsung",
     "pulgadas": "44`",
-    "imagen": "/imagenes/tele.jpg"
+    "imagen": "/imagenes/tele.png"
 },
 {
     "id": 2,
-    "nombre": "televisión",
+    "nombre": "Televisor",
     "precio": 200000,
     "marca": "LG",
     "pulgadas": "50`",
-    "imagen": "/imagenes/tele2.jpeg"
+    "imagen": "/imagenes/tele2.png"
 },
 {
     "id": 3,
-    "nombre": "televisión",
+    "nombre": "Televisor",
     "precio": 180000,
     "marca": "Samsung",
     "pulgadas": "48`",
-    "imagen": "/imagenes/tele3.jpg"
+    "imagen": "/imagenes/tele3.png"
 },
 {
     "id": 4,
-    "nombre": "cocina",
+    "nombre": "Cocina",
     "precio": 140000,
     "marca": "Patrick",
-    "imagen": "/imagenes/cocina.jpg"
+    "imagen": "/imagenes/cocina.png"
 },
 {
     "id": 5,
-    "nombre": "cocina",
+    "nombre": "Cocina",
     "precio": 150000,
     "marca": "Escorial",
-    "imagen": "/imagenes/cocina.jpg"
+    "imagen": "/imagenes/cocina.png"
 },
 {
     "id": 6,
-    "nombre": "cafetera",
+    "nombre": "Cafetera",
     "precio": 90000,
     "marca": "Philco",
-    "imagen": "/imagenes/cafetera-peabody.jpg"
+    "imagen": "/imagenes/cafetera.png"
 },
 {
     "id": 7,
-    "nombre": "licuadora",
+    "nombre": "Licuadora",
     "precio": 60000,
     "marca": "Yelmo",
-    "imagen": "/imagenes/licuadora.jpeg"
+    "imagen": "/imagenes/licuadora.png"
 },
 {
     "id": 8,
-    "nombre": "heladera",
+    "nombre": "Heladera",
     "precio": 240000,
     "marca": "Samsung",
-    "imagen": "/imagenes/heladera.jpeg",
+    "imagen": "/imagenes/heladera.png",
     "no-frost": false
 },
 {
     "id": 9,
-    "nombre": "heladera",
+    "nombre": "Heladera",
     "precio": 150000,
     "marca": "Patrick",
-    "imagen": "/imagenes/heladera.jpeg",
+    "imagen": "/imagenes/heladera.png",
     "no-frost": true
 },
 {
     "id": 10,
-    "nombre": "cafetera",
+    "nombre": "Cafetera",
     "precio": 93000,
     "marca": "Cuk",
-    "imagen": "/imagenes/cuk.jpg"
+    "imagen": "/imagenes/cuk.png"
 },
 {
     "id": 11,
-    "nombre": "equipo de música",
+    "nombre": "Equipo de música",
     "precio": 140000,
     "marca": "Sony",
-    "imagen": "/imagenes/equipo.jpg"
+    "imagen": "/imagenes/equipo.png"
 },
 {
     "id": 12,
-    "nombre": "equipo de música",
+    "nombre": "Equipo de música",
     "precio": 190000,
-    "imagen": "/imagenes/equipo.jpg",
-    "marca": "JVL"
+    "imagen": "/imagenes/equipo.png",
+    "marca": "JBL"
 }
 ]
