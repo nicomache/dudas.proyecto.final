@@ -1,7 +1,9 @@
 const carrito = []
 let lista = document.getElementById("listaProductos");
 let usuario = document.getElementById("usuario");
+let btnBuscador = document.getElementById("buscador");
 let carritos 
+let divNft = document.getElementById('divNfts');
 
 function agregarAlCarrito(item) {
 
@@ -66,16 +68,41 @@ const pedirProductos = async () => {
 
 };
 
-const buscarProductos = async () => {
+const buscador = async () => {
     try{
         const response = await fetch("dataserver.json")
         const data = await response.json();
-        const productos = data.results;
-
-        const buscador = productos.filter (item => {
+        btnBuscador.addEventListener("input", () =>{
+           let inputBuscador = btnBuscador.value;
+           let productosEncontrados = data.filter ((item) => 
+           item.coleccion.includes(inputBuscador.toUpperCase())
+           );
+           // divNft linea 117
+           productosEncontrados.forEach((item) => {
+            const li = document.createElement ("li");
+            li.innerHTML = `
+            <h2>${item.nombre}</h2>
+            <img src=${item.imagen} class="ajuste-imagen" alt=${item.nombre}></img>
+            <h3>${item.marca}</h3>
+            <h3>$${item.precio}</h3>
+            <button id="${item.id}-buy">Comprar</button>
+            <button id="${item.id}-add">Agregar al carrito</button>`;
             
+            let {id, nombre, precio} = item
+
+            divNft.append(li)
+            console.log(productosEncontrados)
+            document.getElementById(`${item.id}-add`).addEventListener("click", ()=>{
+                agregarAlCarrito(item)
+            })
+            document.getElementById(`${item.id}-buy`).addEventListener("click", ()=>{
+                console.log(item)
+                comprar(item);
+            })
         });
-    }
+           
+        }
+    )}
      catch (error) {
         console.log(error)
     }
@@ -86,5 +113,5 @@ const buscarProductos = async () => {
 pedirProductos();
 
 
-
+buscador();
   
