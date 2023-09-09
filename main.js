@@ -72,32 +72,33 @@ const buscador = async () => {
     try{
         const response = await fetch("dataserver.json")
         const data = await response.json();
-        btnBuscador.addEventListener("input", () =>{
+        btnBuscador.addEventListener("change", () =>{
            let inputBuscador = btnBuscador.value;
-           let productosEncontrados = data.filter ((item) => 
-           item.coleccion.includes(inputBuscador.toUpperCase())
-           );
+             let productosEncontrados = data.filter((item) => {
+				return item.nombre.toLowerCase().includes(inputBuscador);
+			});
+           console.log(productosEncontrados)
            // divNft linea 117
            productosEncontrados.forEach((item) => {
-            const li = document.createElement ("li");
-            li.innerHTML = `
-            <h2>${item.nombre}</h2>
-            <img src=${item.imagen} class="ajuste-imagen" alt=${item.nombre}></img>
-            <h3>${item.marca}</h3>
-            <h3>$${item.precio}</h3>
-            <button id="${item.id}-buy">Comprar</button>
-            <button id="${item.id}-add">Agregar al carrito</button>`;
+             const li = document.createElement ("li");
+             li.innerHTML = `
+             <h2>${item.nombre}</h2>
+             <img src=${item.imagen} class="ajuste-imagen" alt=${item.nombre}></img>
+             <h3>${item.marca}</h3>
+             <h3>$${item.precio}</h3>
+             <button id="${item.id}-buy">Comprar</button>
+             <button id="${item.id}-add">Agregar al carrito</button>`;
             
-            let {id, nombre, precio} = item
+              let {id, nombre, precio} = item
 
-            divNft.append(li)
-            console.log(productosEncontrados)
-            document.getElementById(`${item.id}-add`).addEventListener("click", ()=>{
-                agregarAlCarrito(item)
-            })
-            document.getElementById(`${item.id}-buy`).addEventListener("click", ()=>{
-                console.log(item)
-                comprar(item);
+              divNft.append(li)
+              console.log(productosEncontrados)
+              document.getElementById(`${item.id}-add`).addEventListener("click", ()=>{
+                 agregarAlCarrito(item)
+              })
+              document.getElementById(`${item.id}-buy`).addEventListener("click", ()=>{
+                 console.log(item)
+                 comprar(item);
             })
         });
            
